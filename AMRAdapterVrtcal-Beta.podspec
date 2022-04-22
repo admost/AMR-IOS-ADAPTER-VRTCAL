@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-  s.name             = 'AMRAdapterVrtcal'
+  s.name             = 'AMRAdapterVrtcal-Beta'
   s.version          = '2.1.0.0'
   s.license          = { :type => 'Copyright', :text => <<-LICENSE
 														Copyright 2016
@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
   s.documentation_url = 'https://admost.github.io/amrios/'
   s.platform 			= :ios
   s.ios.deployment_target = '10.0'
-  s.vendored_frameworks = "AMRAdapterVrtcal/Libs/AMRAdapterVrtcal.xcframework","AMRAdapterMadvertise/Libs/VrtcalSDK.xcframework"
+  s.vendored_frameworks = "AMRAdapterVrtcal/Libs/AMRAdapterVrtcal.xcframework","AMRAdapterVrtcal/Libs/VrtcalSDK.xcframework"
   s.pod_target_xcconfig = { 'VALID_ARCHS' => 'armv7 arm64 x86_64' }
-  s.dependency 'AMRSDK', '~> 1.5.14'
+  s.dependency 'AMRSDK-Beta', '~> 1.5.14'
 end
